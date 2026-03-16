@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yohebet Sitepu</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    margin:0;
+    background:#f2f2f2;
+}
+
+header{
+    background:#ff9800;
+    color:white;
+    padding:15px;
+    text-align:center;
+}
+
+nav{
+    background:#333;
+    padding:10px;
+    text-align:center;
+}
+
+nav a{
+    color:white;
+    margin:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:yellow;
+}
+
+.container{
+    width:90%;
+    margin:auto;
+    padding:20px;
+}
+
+.section{
+    display:none;
+    background:white;
+    padding:20px;
+    border-radius:5px;
+    box-shadow:0 2px 5px rgba(0,0,0,0.2);
+}
+
+.post{
+    margin-top:20px;
+    padding:15px;
+    border-bottom:1px solid #ddd;
+}
+
+.post img{
+    width:100%;
+    border-radius:5px;
+    margin-bottom:10px;
+}
+
+.home-img{
+    width:100%;
+    border-radius:10px;
+    margin-bottom:15px;
+}
+
+button{
+    padding:8px 12px;
+    background:#ff9800;
+    color:white;
+    border:none;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#e68900;
+}
+
+footer{
+    margin-top:30px;
+    padding:15px;
+    background:#222;
+    color:white;
+    text-align:center;
+}
+</style>
+
+<script>
+function showPage(page){
+    let sections=document.querySelectorAll(".section");
+    sections.forEach(sec=>sec.style.display="none");
+    document.getElementById(page).style.display="block";
+}
+</script>
+
+</head>
+
+<body onload="showPage('home')">
+
+<header>
+<h1>Yohebet Blog</h1>
+<p>Blog informasi dan artikel</p>
+</header>
+
+<nav>
+<a href="#" onclick="showPage('home')">Home</a>
+<a href="#" onclick="showPage('artikel')">Artikel</a>
+<a href="#" onclick="showPage('postingan')">Postingan</a>
+<a href="#" onclick="showPage('kontak')">Kontak</a>
+</nav>
+
+<div class="container">
+
+<!-- HOME -->
+<div id="home" class="section">
+<h2>Home</h2>
+
+<img class="home-img" src="pas_foto.jpeg" alt="gambar blog">
+
+<p>
+Selamat datang di website <b>Yohebet blog</b>. Website ini berisi berbagai informasi,
+artikel, dan postingan yang bermanfaat.
+</p>
+
+<p>
+Di dalam blog ini kamu bisa membaca berbagai artikel, melihat postingan terbaru,
+dan menghubungi pemilik blog melalui menu kontak.
+</p>
+</div>
+
+<!-- ARTIKEL -->
+<div id="artikel" class="section">
+<h2>Artikel</h2>
+
+<div class="post">
+<img src="apa_blog.jpeg">
+<h3>Apa itu Blog?</h3>
+<p>
+Blog adalah sebuah website yang berisi tulisan atau artikel yang diperbarui secara
+berkala. Blog biasanya digunakan untuk berbagi informasi, pengalaman, tutorial,
+atau berita kepada pembaca di internet.
+</p>
+</div>
+
+<div class="post">
+<img src="manfaat_blog.jpeg">
+<h3>Manfaat Blog</h3>
+<p>
+Beberapa manfaat blog antara lain:
+</p>
+
+<ul>
+<li>Berbagi informasi kepada banyak orang</li>
+<li>Media belajar menulis</li>
+<li>Media promosi atau bisnis</li>
+<li>Sebagai portofolio di internet</li>
+</ul>
+
+</div>
+
+</div>
+
+<!-- POSTINGAN -->
+<div id="postingan" class="section">
+<h2>Postingan Terbaru</h2>
+
+<div class="post">
+<img src="html_pemula.jpeg">
+<h3>Belajar HTML Dasar</h3>
+<p>
+HTML adalah bahasa dasar untuk membuat website. Dengan HTML kita bisa
+membuat struktur halaman seperti judul, paragraf, gambar, dan link.
+</p>
+</div>
+
+<div class="post">
+<img src="css_pemula.jpeg">
+<h3>Belajar CSS</h3>
+<p>
+CSS digunakan untuk mempercantik tampilan website. Dengan CSS kita bisa
+mengatur warna, ukuran tulisan, tata letak halaman, dan desain website.
+</p>
+</div>
+
+<div class="post">
+<img src="java_pemula.jpeg">
+<h3>Belajar JavaScript</h3>
+<p>
+JavaScript digunakan untuk membuat website menjadi interaktif.
+Contohnya seperti tombol yang bisa diklik, menu yang berubah,
+atau animasi pada website.
+</p>
+</div>
+
+</div>
+
+<!-- KONTAK -->
+<div id="kontak" class="section">
+<h2>Kontak</h2>
+
+<img class="home-img" src="terimakasih.jpeg">
+
+<p>Jika ingin menghubungi pemilik blog silakan melalui:</p>
+
+<p>
+Email : yohebetsitepu@gmail.com <br>
+Instagram : yohebetsitepu <br>
+WhatsApp : 0838-xxxx-xxxx
+</p>
+
+<p>
+Terima kasih sudah mengunjungi website ini.
+</p>
+</div>
+
+</div>
+
+<footer>
+<p>Copyright © 2026 Yohebet Blog</p>
+</footer>
+
+</body>
+</html>
